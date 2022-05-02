@@ -1,12 +1,182 @@
-main{
-  margin: 15px;
-  margin-top: 15px;
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background: #e5e5e5;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.container_header{
+  width: 100%;
+  float: left;
+  /*background: red;*/
 }
 
 .logo_alura{
-  position: absolute;
-  /*left: 36.67%;*/
-  /*right: 37.43%;*/
-  top: 0%;
-  bottom: 0%;
+  margin-top: 1%;
+  margin-left: 5%;
+  float: inherit;
 }
+
+.titulo{
+  color: #0A3871;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1%;
+  margin-left: 20%;
+  float: inherit;
+}
+
+main{
+  /*background:#CED4DA;*/
+  width: 1024px;
+  height: 650px;
+  padding: 5px;
+  padding-top: 2px;
+  margin-left: 10%;
+}
+
+.panel_izquierdo{
+  width: 75%;
+  height: 65%;
+  float: left;
+  border-radius: 24px;
+  /*background: yellow;*/
+}
+
+.input_panel{
+  color: #0A3871;
+  background: #e5e5e5;
+  line-height: 150%;
+  font-size: 20px;
+  font-weight: bold;
+  width: 85%;
+  height: 85%;
+  float: left;
+  margin: 5% 3% 10% 10%;
+  border: none;
+  outline: none;
+}
+
+.input_panel::placeholder{
+  color: #0A3871;
+}
+
+.panel_derecho{
+  width: 25%;
+  height: 82%;
+  float: right;
+  border-radius: 24px;
+  background: white;
+}
+
+.sin_elementos{
+  text-align: center;
+  padding-top: 50%;
+  color: #0A3871;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.img_figura{
+  width: 85%;
+  height: auto;
+}
+
+
+.p_mensaje_vacio{
+  margin-top: 4%;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: 'Inter';
+  font-style: normal;
+}
+
+.p_ingrese_vacio{
+  margin-top: 1%;
+  font-size: 14px;
+}
+
+#boton_copiar{
+  color: #0A3871;
+  padding: 10% 0;
+  width: 90%;
+  height: 18%;
+  border-radius: 20px;
+  margin: 0 5%;
+  margin-bottom: 10%;
+  border-width: 2px;
+  border-color: #0A3871;
+  background:white;
+}
+
+#boton_copiar:hover{
+  opacity: 0.8;
+}
+
+.botones_izq{
+  width: 75%;
+  height: auto;
+  float: left;
+  border-radius: 24px;
+  /*background: pink;*/
+}
+
+.advertencia{
+  width: 40%;
+  padding-left: 15%;
+}
+
+.img_advertencia{
+  margin-top: 4px;
+}
+
+.advertencia span{
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.botones{
+  margin-top: 2%;
+  width: 100%;
+}
+
+
+.boton_encriptar{
+  width: 35%;
+  height: 30%;
+  border-width: 2px;
+  border-color: #0A3871;
+  border-radius: 20px;
+  padding: 3.5% 12%;
+  margin-left: 12%;
+  margin-right: 4%;
+  color: #D8DFE8;
+  background:#0A3871;
+}
+
+.boton_encriptar:hover{
+  opacity: 0.8;
+}
+
+.boton_desencriptar{
+  width: 35%;
+  height: 30%;
+  border-width: 2px;
+  border-color: #0A3871;
+  border-radius: 20px;
+  padding: 3.5% 12%;
+  color: #0A3871;
+  background:#D8DFE8;
+}
+
+.boton_desencriptar:hover{
+  opacity: 0.8;
+}
+
+
+
+
+
+

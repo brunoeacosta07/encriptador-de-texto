@@ -2,16 +2,46 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Encriptador de texto - Bruno</title>
   <link rel="icon" href="img/logo_alura.png">
-  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
-    <h1 class="logo_alura"><a href="index.html"><img src="img/logo_alura.png" alt="logo_alura"></h1></a>
+  <header class="container_header">
+    <a class="logo_alura" href="index.html"><img src="img/logo_alura.png" alt="logo_alura"></a>
+  
+    <h1 class="titulo">Encriptador de texto</h1>
+  </header>
 
+  <main>
+    <section class="panel_izquierdo">
+      <textarea name="input" id="input_izquierdo" class="input_panel" placeholder="Ingrese el texto aqui..." cols="30" rows="10"></textarea>
+  
+    </section>
+
+    <section class="panel_derecho">
+      <div class="sin_elementos">
+          <img class="img_figura" src="img/dibujo_figura.png" alt="figura_texto">
+
+          <p class="p_mensaje_vacio">Ningún mensaje fue encontrado</p>
+          <p class="p_ingrese_vacio">Ingrese el texto que desees encriptar o desencriptar.</p>
+          
+          <button id="boton_copiar">Copiar</button>
+      </div>
+    </section>
+
+    <section class="botones_izq">
+      <div class="advertencia">
+        <img class= "img_advertencia"; src="img/advertencia.png" alt="advertencia">
+        <span>Solo minúsculas y sin acento</span>
+      </div>
+      <div class="botones">
+        <button class="boton_encriptar">Encriptar</button>
+        <button class="boton_desencriptar">Desencriptar</button>
+      </div>
+    </section>
 
   </main>
 
