@@ -18,28 +18,25 @@
   <main>
     <section class="panel_izquierdo">
       <textarea name="input" id="input_izquierdo" class="input_panel" placeholder="Ingrese el texto aqui..." cols="30" rows="10"></textarea>
-  
+      
+      <div class="botones_izq"> 
+        <span class= "advertencia";><img src="img/advertencia.png" alt="advertencia"> Solo minúsculas y sin acento</span>
+        <div class="botones">
+          <button class="boton_encriptar" id="btn_encriptar">Encriptar</button>
+          <button class="boton_desencriptar" id="btn_desencriptar">Desencriptar</button>
+        </div>
+      </div>
     </section>
 
     <section class="panel_derecho">
       <div class="sin_elementos">
           <img class="img_figura" src="img/dibujo_figura.png" alt="figura_texto">
-
           <p class="p_mensaje_vacio">Ningún mensaje fue encontrado</p>
           <p class="p_ingrese_vacio">Ingrese el texto que desees encriptar o desencriptar.</p>
-          
-          <button id="boton_copiar">Copiar</button>
       </div>
-    </section>
-
-    <section class="botones_izq">
-      <div class="advertencia">
-        <img class= "img_advertencia"; src="img/advertencia.png" alt="advertencia">
-        <span>Solo minúsculas y sin acento</span>
-      </div>
-      <div class="botones">
-        <button class="boton_encriptar">Encriptar</button>
-        <button class="boton_desencriptar">Desencriptar</button>
+      
+      <div class="boton_derecho">
+        <button class="boton_copiar" id="btn_copiar">Copiar</button>
       </div>
     </section>
 
