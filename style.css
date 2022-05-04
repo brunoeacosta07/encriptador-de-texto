@@ -54,7 +54,7 @@ main{
   color: #0A3871;
   background: #e5e5e5;
   line-height: 150%;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   width: 80%;
   height: 70%;
@@ -145,10 +145,12 @@ main{
 }
 
 .sin_elementos{
+  /*border: 3px solid #000;*/
   width: 85%;
+  height: 70%;
   margin: auto;
   text-align: center;
-  padding-top: 35%;
+  padding-top: 50%;
   color: #0A3871;
 }
 
@@ -159,7 +161,7 @@ main{
 
 
 .p_mensaje_vacio{
-  margin-top: 4%;
+  
   font-weight: bold;
   font-size: 24px;
   line-height: 85%;
@@ -171,12 +173,27 @@ main{
   line-height: 85%;
 }
 
+.con_elementos{
+  width: 95%;
+  height: 95%;
+  display: grid;
+  grid-template-rows: 5fr 1fr;
+  margin: auto;
+}
+
+.texto_derecha{
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #0A3871;
+  font-size: 22px;
+  font-weight: 600;
+}
+
 .boton_derecho{
   width: 100%;
-  height: 12%;
-  margin-top: 1%;
+  height: 70%;
+  margin-top: 3%;
   display: grid;
-
 }
 
 .boton_copiar{
@@ -188,7 +205,6 @@ main{
   border-width: 2px;
   border-color: #0A3871;
   background:white;
-  visibility: hidden;
 }
 
 .boton_copiar:hover{
@@ -203,9 +219,6 @@ main{
   border-color: #08e251;
 }
 
-
-
-
-
-
-
+footer{
+  text-align: center;
+}
