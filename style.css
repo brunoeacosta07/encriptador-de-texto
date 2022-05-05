@@ -30,22 +30,28 @@ body{
 }
 
 main{
-  /*border: 3px solid red;*/
+  /* border: 3px solid red; */
   max-width: 1440px;
   max-height: 1024;
+  
+  
+  
+}
+
+.principal{
+  /*border: 3px solid blue; */
   width: 80%;
   height: 90%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 2.8fr 1fr;
+  grid-template-columns: 2.5fr 1fr;
 }
 
 .panel_izquierdo{
-  /*border: 3px solid yellow;*/
+  /*border: 3px solid yellow; */
   width: 80%;
   height: 95%;
-  border-radius: 24px;
-  margin: 3% 3% 0 auto;
+  margin: auto;
 }
 
 .input_panel{
@@ -59,7 +65,7 @@ main{
   width: 80%;
   height: 70%;
   margin: 0 auto;
-  /*border: 3px solid pink;*/
+  /*border: 3px solid blue;*/
   border: none;
   outline: none;
 }
@@ -70,10 +76,10 @@ main{
 }
 
 .botones_izq{
-  /*border: 3px solid black;*/
-  width: 80%;
-  height: 30%;
-  margin: auto auto auto 10%;
+  /*border: 3px solid black; */
+  width: 90%;
+  height: 20%;
+  margin: 5% auto auto auto;
   display: grid;
   grid-template-rows: 1fr 3fr;
 }
@@ -84,6 +90,7 @@ main{
 }
 
 .botones{
+  /*border: 3px solid red;*/
   margin-top: 2%;
   width: 100%;
   margin: 1% auto;
@@ -94,7 +101,7 @@ main{
 
 
 .boton_encriptar{
-  height: 55%;
+  height: 70%;
   border-width: 2px;
   border-color: #0A3871;
   border-radius: 24px;
@@ -117,12 +124,13 @@ main{
 }
 
 .boton_desencriptar{
-  height: 55%;
+  height: 70%;
   border-width: 2px;
   border-color: #0A3871;
   border-radius: 24px;
   color: #0A3871;
   background:#D8DFE8;
+  box-shadow: -4px 4px 15px rgba(0, 0, 0, .30);
 }
 
 .boton_desencriptar:hover{
@@ -138,6 +146,7 @@ main{
 }
 
 .panel_derecho{
+  /* border: 3px solid violet; */
   height: 100%;
   position: relative;
   border-radius: 30px;
@@ -184,6 +193,10 @@ main{
 
 
 .texto_derecha{
+  /*border: 3px solid green;*/
+  word-break: break-word; 
+  hyphens: auto;
+  max-width: 90%;
   margin-left: 5%;
   margin-right: 5%;
   color: #0A3871;
@@ -192,13 +205,15 @@ main{
 }
 
 .boton_derecho{
+  /*border: 3px solid yellow;*/
   width: 100%;
-  height: 70%;
+  height: 65%;
   margin-top: 3%;
   display: grid;
 }
 
 .boton_copiar{
+  max-width: 90%;
   width: 90%;
   height: 90%;
   color: #0A3871;
@@ -222,5 +237,274 @@ main{
 }
 
 footer{
+  margin-top: 7%;
+  display: grid;
+  grid-template-columns: 2.8fr 1fr;
+}
+
+.texto_footer{
+  padding-left: 2%;
   text-align: center;
+}
+
+.redes{
+  display: flex;
+  flex-direction: row;
+}
+
+.img_redes{
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 40px;
+  height: 43px;
+}
+
+@media screen and (max-width:768px) {
+  body{
+    max-height: 1174px;
+    max-width: 768px;
+    
+  }
+
+  .titulo{
+    left: 17%;
+    font-size: 36px;
+  }
+
+  main{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .principal{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr;
+  }
+
+  .panel_izquierdo{
+    max-width: 80%;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+  }
+
+  .input_panel{
+    width: 85%;
+    left: 6%;
+    font-size: 24px;
+  }
+
+  .botones_izq{
+    width: 97%;
+    height: 25%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+  }
+  
+  .advertencia{
+    width: 70%;
+    margin: auto 3%;
+  }
+
+  .botones{
+    width: 100%;
+    height: 70%;
+    margin: 1% 0;
+    grid-gap: 2%;
+  }
+
+  .boton_encriptar{
+    height: 90%;
+  }
+
+  .boton_desencriptar{
+    height: 90%;
+  }
+
+  .panel_derecho{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+  }
+
+  .sin_elementos{
+    width: 85%;
+    height: 70%;
+    padding-top: 0
+    
+  }
+  
+  .img_figura{
+    display: none;
+  }
+
+  .boton_derecho{
+    /*border: 3px solid yellow;*/
+    width: 100%;
+    height: 100%;
+    margin-top: 3%;
+    display: grid;
+  }
+  
+  .boton_copiar{
+    max-width: 60%;
+    width: 60%;
+    height: 100%;
+    padding: 1.5% 0;
+  }
+
+}
+
+@media screen and (max-width:375px) {
+  body{
+    max-width: 375px;
+    max-height: 933px;
+  }
+
+  .container_header{
+    grid-template-columns: 25px 1fr;
+  }
+
+  .titulo{
+    left: 4%;
+    font-size: 32px;
+    text-align: center;
+    line-height: 85%;
+  }
+
+  main{
+    width: 90%;
+    height: 120%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .principal{
+    box-sizing: border-box;
+    /*border: 3px solid lightcoral;*/
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .panel_izquierdo{
+    max-height: 100%;
+    max-width: 90%;
+    width: 90%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    
+  }
+
+  .input_panel{
+    width: 85%;
+    left: 6%;
+    font-size: 24px;
+  }
+
+  .botones_izq{
+    width: 97%;
+    height: 30%;
+    margin: 2% auto;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+  }
+  
+  .advertencia{
+    width: 90%;
+    margin: auto 3%;
+  }
+
+  .botones{
+    /*border: 3px solid gray;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 1% auto;
+    grid-gap: 2%;
+  }
+
+  .boton_encriptar{
+    margin-bottom: 2.5%;
+    height: 90%;
+    border-radius: 15px;
+  }
+
+  .boton_desencriptar{
+    height: 90%;
+    border-radius: 15px;
+  }
+
+  .panel_derecho{
+    width: 90%;
+    height: 100%;
+    margin: 10% auto;
+  }
+
+  .sin_elementos{
+    width: 85%;
+    height: 70%;
+    padding-top: 0
+    
+  }
+  
+  .img_figura{
+    display: none;
+  }
+
+  .boton_derecho{
+    /*border: 3px solid yellow;*/
+    width: 100%;
+    height: 100%;
+    margin-top: 3%;
+    display: grid;
+  }
+  
+  .boton_copiar{
+    max-width: 60%;
+    width: 50%;
+    height: 100%;
+    padding: 1.5% 0;
+  }
+
+  footer{
+    margin-top: 7%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  
+  .texto_footer{
+    text-align: center;
+  }
+  
+  .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .img_redes{
+    padding-right: 5px;
+    padding-left: 5px;
+    width: 40px;
+    height: 43px;
+  }
+
 }

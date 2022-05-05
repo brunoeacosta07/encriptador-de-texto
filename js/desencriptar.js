@@ -7,6 +7,7 @@ boton_desencriptar.addEventListener('click', function(){
   var con_elementos = document.querySelector('.con_elementos');
 
   boton_copiar.textContent = 'Copiar'; //Declarado en copiar.js 
+  boton_copiar.style.backgroundColor = '#fff';
 
   if(input_texto.value.length > 0){
     sin_elementos.style.display = 'none';
